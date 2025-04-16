@@ -1,0 +1,534 @@
+/* CSS Reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+html, body {
+  width: 100vw;
+  height: 100%;
+  font-family: 'Roboto';
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: 'Crashbow';
+    src: url('assets/fonts/Crashbow.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Global Styles */
+
+.body {
+  width: 100vw;
+
+  background-color: #f7f7f7;
+  padding: 0px;
+}
+
+.main-btn {
+  background-color: #abce81;
+  color: #fff;
+  width: fit-content;
+  font-weight: bolder;
+  padding: 10px 15px 10px 15px;
+  cursor: pointer;
+}
+
+.sec-btn {
+  background-color: transparent;
+  color: #060B1E;
+  width: fit-content;
+  font-weight: bolder;
+  padding: 8px 23px 8px 23px;
+  border: 2px solid #060B1E;
+  font-size: 0.8rem;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.section-crop {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+}
+
+.section-title {
+  color: #f7f7f7;
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+/* Images Sizes */
+
+.logo-image {
+  width: 50px;
+  height: auto;
+}
+
+.footer-logo {
+  width: 40px;
+  height: auto;
+}
+
+.search-bar label img {
+  width: 20px;
+  height: auto;
+}
+
+.submit-btn-icon {
+  width: 30px;
+  height: auto;
+}
+
+.card-img {
+  width: 350px;
+}
+
+.section-3-img-container img {
+  width: 260px;
+}
+
+.footer-social a img {
+  width: 25px;
+}
+
+/* Header Styles */
+
+.header {
+  width: 100%;
+  padding-bottom: 150px;
+  background-image: linear-gradient(to bottom, rgba(211, 211, 211, 0.5), rgba(236, 236, 236, 0.5));
+  background-image: url('assets/pics/Garota\ inverno\ header.png');
+  background-size: 600px;
+  background-position: calc(100% - 50px) calc(100%);
+  background-repeat: no-repeat;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 90px 40px 60px;
+}
+
+/* Nav Styles */
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.nav-list li {
+  font-weight: bolder;
+  font-size: 0.8em;
+}
+
+/* Search Bar Styles */
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.search {
+  width: 280px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-bottom: 2px solid black;
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.search-bar label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.search-bar input::placeholder {
+  color: #868686b6;
+  font-weight: 600;
+  font-size: 0.9em;
+  letter-spacing: 1.2px;
+  font-style: italic;
+}
+
+/* Header Left Div Styles */
+
+.header-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+  gap: 15px;
+  padding: 20px 30px 20px 30px;
+
+  width: 600px;
+}
+
+.header-bottom h1 {
+  font-family: 'Crashbow', sans-serif;
+  font-size: 5em;
+  font-weight: 300;
+  color: #000000;
+  text-align: left;
+  letter-spacing: 10px;
+  padding-left: 10px;
+
+}
+
+.header-bottom-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+ 
+.header-bottom h2 {
+  font-weight: 500;
+  padding-left: 10px;
+}
+
+.header-bottom p {
+  font-weight: 300;
+  padding-left: 10px;
+  line-height: 20px;
+}
+
+.header-bottom a {
+  background-color: #abce81;
+  color: #fff;
+  width: fit-content;
+  font-weight: bolder;
+  margin-left: 10px;
+  padding: 10px 15px 10px 15px;
+}
+
+/* Main Styles */
+
+.emphasis {
+  font-weight: bold;
+  color: #abce81;
+}
+
+/* Section 1 Styles */
+
+.section-1 {
+  display: flex;
+  width: 100%;
+  color: #060B1E;
+}
+
+.section-1-left, .section-1-right {
+  flex: 1;
+}
+
+.section-1-left-container {
+  position: relative;
+  color: white;
+}
+
+.section-1-left-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: #fff;
+  border: 3px solid #ffffff48;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+}
+
+.section-1-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #060B1E;
+  color: rgba(255, 255, 255, 0.699);
+}
+
+.section-1-right-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  gap: 20px;
+  height: 400px;
+  width: 400px;
+}
+
+.section-1-right-content a {
+  margin-top: 10px;
+}
+
+/*Section 2 styles*/
+
+.section-2 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  color: #060B1E;
+}
+
+.section-2-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 80px 0px 150px 65px;
+  gap: 20px;
+} 
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  color: #060B1E;
+}
+
+.card-img-container {
+  display: flex;
+  width: 240px;
+  height: 300px;
+  align-items: center;
+  background-color: #e5e5e5;
+  overflow: hidden;
+}
+
+.card h2 {
+  font-size: 1rem;
+}
+
+.card p {
+  color: #abce81;
+}
+
+.section-2-right {
+  background-color: transparent;
+  background-image: url('assets/pics/Garota\ inverno\ section.png');
+  background-size: cover;
+}
+
+/*Section 3 Styles*/
+
+.section-3 {
+  display: grid;
+  grid-template-columns: 1.2fr 3fr;
+  grid-template-rows: 1.6fr 2fr;
+  align-items: center;
+  color: #060B1E;
+}
+
+.section-3-left {
+  background-color: transparent;
+  background-image: url('assets/pics/homem\ rosto.png');
+  background-size: cover;
+}
+
+.section-3-left {
+  background-color: transparent;
+  background-image: url('assets/pics/homem\ rosto.png');
+  background-size: cover;
+}
+
+.section-3-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 70px 90px;
+}
+
+.section-3-right-text {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.section-3-right-text h1 {
+  font-size: 1rem;
+}
+
+.section-3-right-text h2 {
+  text-align: center;
+}
+
+.section-4-left {
+  background-color: #060B1E;
+  color: rgba(255, 255, 255, 0.699);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.section-4-left-text {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  gap: 20px;
+}
+
+.section-4-left h1 {
+  color: #abce81;
+}
+
+.section-4-left p {
+  width: 245px;
+}
+
+.section-4-left a {
+  margin-top: 15px;
+}
+
+.section-4-right {
+  background-color: transparent;
+  background-image: url('assets/pics/Homem\ corpo\ inteiro.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*Footer Styles*/
+
+.footer {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  background-color: #2A2D3E;
+}
+
+.footer-container {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 50px;
+  line-height: 30px;
+}
+
+.footer-text h4 {
+  color: #f7f7f7;
+  padding-bottom: 10px;
+}
+
+.footer-text ul li a {
+  color: #676c81;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+}
+
+.footer-copy {
+  font-size: 0.9rem;
+  text-align: center;
+  color: #676c81;
+}
+
+.footer-copy strong {
+  color: #f7f7f7;
+}

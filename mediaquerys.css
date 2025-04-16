@@ -1,0 +1,284 @@
+@media (max-width: 600px) {
+
+    .header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      height: 110vh;
+      background-image: url('assets/pics/Garota\ inverno\ header.png');
+      background-size: 400px;
+      background-position: calc(100% - 50px) calc(100%);
+      background-repeat: no-repeat;
+    }
+    
+    .header-bottom {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      gap: 25px;
+      padding: 30px;
+    
+      width: 400px;
+    }
+
+    .header-bottom h1 {
+      font-family: 'Crashbow', sans-serif;
+      font-size: 4em;
+      font-weight: 300;
+      color: #000000;
+      text-align: center;
+      margin-left: 20px;
+      letter-spacing: 10px;
+      padding: 0;
+    }
+
+    .header-bottom-desc {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .nav {
+      display: none;
+    }
+
+    .header-top {
+      width: 100%;
+      padding: 30px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .search {
+      width: 130px;
+    }
+  
+    .hamburger {
+
+      display: block;
+      background: none;
+      border: none;
+      font-size: 2em;
+      cursor: pointer;
+    }
+  
+    .sidebar.show {
+      display: block;
+      transform: translateX(0);
+      left: 0; /* Move para a posição visível */
+      opacity: 1; /* Torna a sidebar visível */
+    }
+
+    .section-1 {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      color: #060B1E;
+    }
+    
+    .section-1-left, .section-1-right {
+      flex: 1;
+    }
+    
+    .section-1-left-container {
+      position: relative;
+      color: white;
+    }
+    
+    .section-1-left-img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .section-1-right {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      background-color: #060B1E;
+      color: rgba(255, 255, 255, 0.699);
+    }
+    
+    .section-1-right-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 20px;
+      height: 400px;
+      width: 280px;
+    }
+    
+    .section-1-right-content a {
+      margin-top: 10px;
+    }
+
+    .section-2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #060B1E;
+    }
+    
+    .section-2-left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 50px;
+      gap: 20px;
+    } 
+    
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      color: #060B1E;
+    }
+    
+    .card-img-container {
+      display: flex;
+      width: 240px;
+      height: 300px;
+      align-items: center;
+      background-color: #e5e5e5;
+      overflow: hidden;
+    }
+    
+    .card h2 {
+      font-size: 1rem;
+    }
+    
+    .card p {
+      color: #abce81;
+    }
+    
+    .section-2-right {
+      height: 500px;
+      background-color: transparent;
+      background-image: url('assets/pics/Garota\ inverno\ section.png');
+      background-size: cover;
+    }
+
+    .section-3 {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      align-items: center;
+      color: #060B1E;
+    }
+    
+    .section-3-left {
+      background-color: transparent;
+      background-image: url('assets/pics/homem\ rosto.png');
+      background-size: cover;
+      height: 500px;
+    }
+    
+    .section-3-left {
+      background-color: transparent;
+      background-image: url('assets/pics/homem\ rosto.png');
+      background-size: cover;
+    }
+    
+    .section-3-right {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      padding: 25px;
+    }
+    
+    .section-3-right-text {
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    .section-3-right-text h1 {
+      font-size: 0.8rem;
+    }
+    
+    .section-3-right-text h2 {
+      text-align: center;
+      font-size: 1rem;
+    }
+
+    .section-3-right-text a {
+      text-align: center;
+      font-size: 0.6rem;
+    }
+
+    .section-4-left-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 20px;
+      height: 400px;
+      width: 280px;
+    }
+
+    .footer {
+      width: 100%;
+      height: 50vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      gap: 50px;
+      background-color: #2A2D3E;
+    }
+    
+    .footer-container {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      line-height: 16px;
+    }
+    
+    .footer-text h4 {
+      color: #f7f7f7;
+      font-size: 0.6rem;
+      padding-bottom: 10px;
+    }
+    
+    .footer-text ul li a {
+      color: #676c81;
+      font-size: 0.4rem;
+    }
+    
+    .footer-bottom {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    
+    .footer-social {
+      display: flex;
+      flex-direction: row;
+      gap: 35px;
+    }
+    
+    .footer-copy {
+      font-size: 0.7rem;
+      text-align: center;
+      color: #676c81;
+    }
+    
+    .footer-copy strong {
+      color: #f7f7f7;
+    }
+  }

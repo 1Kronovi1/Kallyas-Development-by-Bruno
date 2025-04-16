@@ -1,0 +1,40 @@
+.hamburger,
+.sidebar {
+  display: none;
+}
+
+/* Sidebar estilo mobile */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background: #111;
+  color: white;
+  padding: 1.5em;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.5);
+  transform: translateX(-100%);
+  transition: none; /* Remover transição aqui */
+  opacity: 0; /* Torna a sidebar invisível inicialmente */
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 1em 0;
+  border-bottom: 1px solid #333;
+  cursor: pointer;
+}
+
+.sidebar .close {
+  font-size: 2em;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 1em;
+}
